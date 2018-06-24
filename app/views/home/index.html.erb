@@ -1,2 +1,29 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div id="editor">#Place your code here</div>
+<script src="/js/ace/src-min/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/ace/src-min/theme-twilight.js" type="text/javascript" charset="utf-8"></script>
+<!-- <script src="/js/ace/src-min/mode-javascript.js" type="text/javascript" charset="utf-8"></script> -->
+<script src="/js/ace/src-min/mode-ruby.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/ace/src-min/mode-java.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/ace/src-min/mode-python.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/ace/src-min/mode-cobol.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/ace/src-min/mode-c_cpp.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/ace/src-min/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/twilight");
+    var JavaScriptMode = ace.require("ace/mode/ruby").Mode;
+	editor.session.setMode(new JavaScriptMode());
+	editor.setOption("minLines", 30);
+	editor.setOption("maxLines", 30);
+	editor.setOption("fontSize", "12pt");
+	
+</script>
+<style type="text/css">
+#editor {
+    position: absolute;
+    width: 700px;
+    height: 300px;
+}
+
+</style>
