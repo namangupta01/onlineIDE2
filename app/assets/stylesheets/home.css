@@ -1,0 +1,35 @@
+#editor-row{
+	margin: 0px;
+	display: flex;
+}
+
+#input-output-column{
+	padding: 0 10px 0 10px;
+	margin: 0 15px 0 15px;
+	width: 100%;
+}
+
+#output-area{
+	background-color: #d9dce0;
+	height: 300px;
+}
+
+.purple-border textarea {
+    border: 1px solid #ba68c8;
+}
+.purple-border .form-control:focus {
+    border: 1px solid #ba68c8;
+    box-shadow: 0 0 0 0.2rem rgba(186, 104, 200, .25);
+}
+
+.green-border-focus .form-control:focus {
+    border: 1px solid #8bc34a;
+    box-shadow: 0 0 0 0.2rem rgba(139, 195, 74, .25);
+}
+
+#recent-activity{
+	margin-left: 10px;
+	margin-right: 10px;
+	min-width: 190px;
+	word-wrap: break-word;
+}
