@@ -1,11 +1,15 @@
 
 <div id = "editor-row">
+	<%= render partial: 'shared/sidebar' %>
+
+	<%= render :partial => "shared/recent_activities" %>
+	
 	<%= render partial: 'shared/editor' %>
 	<div id="input-output-column">	
 		<div id="input-box">
 			<div class="form-group purple-border">
 		    <label for="exampleFormControlTextarea4">Type your input here</label><br>
-		    <textarea class="form-control" id="exampleFormControlTextarea4" rows="10"></textarea>
+		    <textarea class="form-control" id="exampleFormControlTextarea4" rows="5"></textarea>
 			</div>
 		</div>
 		<!-- <div id="output-box">
@@ -15,9 +19,5 @@
 			</div>
 		</div> -->
 		<%= render :partial => "shared/toolbar" %>
-	</div>
-	<div id="recent-activity">
-		<h3>Recent Activity</h3>
-		<%= render :partial => "shared/recent_activities" %>
 	</div>
 </div>
